@@ -4,11 +4,8 @@ If you pass this suite, you aren't necessarily spec compliant, but it is a helpf
 
 ## Usage
 
-To run using the PHP5 test runner, you'll need to convert to PHP5's .phpt format first.  The following demonstrates writing the tests out to /tmp/phpt:
+PHP's run-tests.php test runner is included. To run the test suite, do this:
 
-    ./make_phpt . /tmp/phpt
-    TEST_PHP_EXECUTABLE=~/php-src/sapi/cli/php ~/php-src/run-tests.php /tmp/phpt
+    TEST_PHP_EXECUTABLE=/usr/bin/php php run-tests.php tests
 
-To use the HHVM test runner:
-
-    ~/hhvm/hphp/test/run .
+Replace `/usr/bin/php` with the path to a different PHP executable, if necessary.
